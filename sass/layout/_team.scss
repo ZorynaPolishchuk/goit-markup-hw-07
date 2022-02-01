@@ -1,0 +1,65 @@
+.team {
+  background-color: var(--team-color);
+}
+.team-container {
+  @extend .work-container;
+}
+.team-list {
+  @extend .work-list;
+}
+.team-card {
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  border-top-style: none;
+}
+.team-card:not(:last-child) {
+  margin-right: 30px;
+}
+.team-name-border {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.employees-title {
+  font-weight: 500;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
+}
+.employees-text {
+  @extend .employees-title;
+  color: var(--primary-text-color);
+  margin-bottom: 16px;
+}
+.team-social-list {
+  display: flex;
+  justify-content: center;
+}
+.team-social-item {
+  & + & {
+    margin-left: 10px;
+  }
+}
+.team-social-link {
+  @extend %align-list;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-white-color);
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--icon-fill);
+  transition: background-color var(--transition-duration) var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+  }
+}
+.team-social-icon {
+  fill: currentColor;
+}

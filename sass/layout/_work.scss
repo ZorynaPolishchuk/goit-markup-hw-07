@@ -1,0 +1,42 @@
+.work-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.work-title {
+  @include font($fs: 36px, $lh: 1.16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+.work-list {
+  display: flex;
+}
+.work-card {
+  margin-right: 30px;
+}
+.work-item-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.work-card-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--primary-white-color);
+  @include font($fs: 14px, $lh: 1.14);
+  text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform var(--transition-duration) var(--transition-timing-function);
+  .work-card:hover & {
+    transform: translateY(0);
+  }
+}

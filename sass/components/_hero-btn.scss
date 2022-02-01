@@ -1,0 +1,13 @@
+.hero-btn {
+  background-color: var(--accent-color);
+  font-family: inherit;
+  @include font-btn;
+  align-items: center;
+  text-align: center;
+  color: var(--primary-white-color);
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 32px;
+}

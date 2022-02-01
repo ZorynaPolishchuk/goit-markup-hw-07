@@ -1,0 +1,92 @@
+.footer {
+  background-color: var(--hero-color);
+}
+.footer-container {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container-left,
+.footer-container-right,
+.footer-container-end {
+  align-self: baseline;
+}
+.footer-container-left {
+  flex-grow: 1;
+}
+.footer-container-right {
+  padding-left: 70px;
+}
+.footer-container-end {
+  padding-left: 93px;
+}
+.footer-contacts {
+  list-style-type: none;
+  font-style: normal;
+}
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address-text {
+  @include font(14px, 400, 1.71);
+  color: var(--primary-white-color);
+}
+.footer-link {
+  @include font(14px, 400, 1.71);
+  color: var(--footer-link-color);
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.footer-icon-title {
+  @include font($fs: 14px, $lh: 1.14);
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+.footer-icon-list {
+  @extend .team-social-list;
+}
+.footer-icon-item {
+  @extend .team-social-item;
+}
+.footer-icon-link {
+  @extend .team-social-link;
+  background-color: rgba(248, 248, 248, 0.1);
+  color: var(--primary-white-color);
+  transition: background-color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.footer-icon {
+  fill: currentColor;
+}
+.footer-online-subscribe {
+  @extend %align-list;
+  justify-content: space-between;
+}
+.online-subscribe {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+  padding: 15px;
+  margin-right: 12px;
+  color: var(--primary-white-color);
+  &::placeholder {
+    @include font(16px, 400, 1.25);
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.submit-icon {
+  margin-left: 10px;
+}
