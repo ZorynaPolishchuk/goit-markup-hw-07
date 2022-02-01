@@ -1,11 +1,11 @@
 .qualities {
   padding-top: var(--section-padding);
 }
-.qualities-icon-list {
+.qualities-content {
   display: flex;
   justify-content: space-between;
 }
-.qualities-icon-item {
+.qualities-content__item {
   & + & {
     margin-left: 30px;
   }
@@ -23,18 +23,18 @@
   margin-right: -30px;
   margin-bottom: -10px;
 }
-.qualities-item {
+.qualities-list__item {
   margin-right: 30px;
   margin-bottom: 10px;
   flex-basis: calc((100% - 4 * 30px) / 4);
 }
-.qualities-title {
+.qualities-list__title {
   @include font($fs: 14px, $lh: 1.14);
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
-.qualities-after-title {
+.qualities-list__after-title {
   @include font($fs: 14px, $fw: 400, $lh: 1.71);
   color: var(--primary-text-color);
 }

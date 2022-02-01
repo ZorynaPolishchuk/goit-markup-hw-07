@@ -1,19 +1,19 @@
-.clients-container {
-  @extend .work-container;
+.clients__container {
+  @extend .work__container;
 }
-.clients-title {
-  @extend .work-title;
+.clients__title {
+  @extend .work__title;
 }
-.clients-icon-list {
+.clients-list {
   display: flex;
   justify-content: space-between;
 }
-.clients-icon-item {
+.clients-list__item {
   & + & {
     margin-left: 30px;
   }
 }
-.clients-icon-link {
+.clients-list__link {
   @extend %align-list;
   width: 170px;
   height: 92px;

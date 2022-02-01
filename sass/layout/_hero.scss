@@ -13,10 +13,10 @@
   background-position: center;
   background-size: cover;
 }
-.hero-container {
+.hero__container {
   text-align: center;
 }
-.hero-main-title {
+.hero__main-title {
   @include font(44px, 900, 1.36, 0.06em);
   text-align: center;
   text-transform: uppercase;

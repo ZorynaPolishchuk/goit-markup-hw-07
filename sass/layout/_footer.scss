@@ -1,37 +1,37 @@
 .footer {
   background-color: var(--hero-color);
 }
-.footer-container {
+.footer__container {
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-container-left,
-.footer-container-right,
-.footer-container-end {
+.footer__container-left,
+.footer__container-right,
+.footer__container-end {
   align-self: baseline;
 }
-.footer-container-left {
+.footer__container-left {
   flex-grow: 1;
 }
-.footer-container-right {
+.footer__container-right {
   padding-left: 70px;
 }
-.footer-container-end {
+.footer__container-end {
   padding-left: 93px;
 }
-.footer-contacts {
+.footer-contact {
   list-style-type: none;
   font-style: normal;
 }
-.footer-contacts-item:not(:last-child) {
+.footer-contact__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address-text {
+.footer-contact__address {
   @include font(14px, 400, 1.71);
   color: var(--primary-white-color);
 }
-.footer-link {
+.footer-contact__link {
   @include font(14px, 400, 1.71);
   color: var(--footer-link-color);
   transition: color var(--transition-duration) var(--transition-timing-function);
@@ -40,20 +40,20 @@
     color: var(--accent-color);
   }
 }
-.footer-icon-title {
+.footer__title {
   @include font($fs: 14px, $lh: 1.14);
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
 }
-.footer-icon-list {
-  @extend .team-social-list;
+.footer-social {
+  @extend .team-social;
 }
-.footer-icon-item {
-  @extend .team-social-item;
+.footer-social__item {
+  @extend .team-social__item;
 }
-.footer-icon-link {
-  @extend .team-social-link;
+.footer-social__link {
+  @extend .team-social__link;
   background-color: rgba(248, 248, 248, 0.1);
   color: var(--primary-white-color);
   transition: background-color var(--transition-duration) var(--transition-timing-function);
@@ -62,14 +62,14 @@
     background-color: var(--accent-color);
   }
 }
-.footer-icon {
+.footer-social__icon {
   fill: currentColor;
 }
-.footer-online-subscribe {
+.footer__form-subscribe {
   @extend %align-list;
   justify-content: space-between;
 }
-.online-subscribe {
+.footer__form-online {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -87,6 +87,6 @@
     color: rgba(255, 255, 255, 0.6);
   }
 }
-.submit-icon {
+.footer-submit__icon {
   margin-left: 10px;
 }

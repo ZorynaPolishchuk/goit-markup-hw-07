@@ -1,4 +1,4 @@
-.filter-container {
+.filter__container {
   text-align: center;
   padding-top: var(--section-padding);
   padding-bottom: 50px;
@@ -9,6 +9,6 @@
   display: flex;
   justify-content: center;
 }
-.filter-item:not(:last-child) {
+.filter-list__item:not(:last-child) {
   margin-right: 8px;
 }

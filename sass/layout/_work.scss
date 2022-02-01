@@ -1,10 +1,10 @@
-.work-container {
+.work__container {
   margin-right: auto;
   margin-left: auto;
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
-.work-title {
+.work__title {
   @include font($fs: 36px, $lh: 1.16);
   text-align: center;
   letter-spacing: 0.03em;
@@ -14,14 +14,14 @@
 .work-list {
   display: flex;
 }
-.work-card {
+.work-list__item {
   margin-right: 30px;
 }
-.work-item-wrap {
+.work-list__wrap {
   position: relative;
   overflow: hidden;
 }
-.work-card-text {
+.work-list__text {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -36,7 +36,7 @@
   width: 100%;
   transform: translateY(100%);
   transition: transform var(--transition-duration) var(--transition-timing-function);
-  .work-card:hover & {
+  .work-list__item:hover & {
     transform: translateY(0);
   }
 }
